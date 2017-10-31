@@ -1,0 +1,13 @@
+<h3 id="info"></h3>
+<div id="error_message" class="btn btn-danger" style="display: none"></div>
+{{ form_start(form, {'attr': {'id': 'form_add', 'novalidate': 'novalidate'}}) }}
+    {{ form_widget(form.id, {'id': 'operation_id'}) }}
+    {{ form_label(form.text) }}
+    {{ form_widget(form.text, {'id': 'operation_text'}) }}
+    {{ form_label(form.valueUAH) }}
+    {{ form_widget(form.valueUAH, {'id': 'operation_valueUAH'}) }}
+    {{ form_label(form.valueUSD) }}
+    {{ form_widget(form.valueUSD, {'id': 'operation_valueUSD', 'disabled': 'true'}) }}
+    {{ form_label(form.date) }}
+    {{ form_widget(form.date, {'id': 'operation_date'}) }}
+{{ form_end(form) }}
